@@ -2,11 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 
+
 function Navbar() {
   return (
-    <nav className="bg-amber-600 h-dvh w-1/12 fixed navbar">
-      <div className="logo">MyWebsite</div>
-      <ul className="nav-links">
+    <nav className="fixed navbar">
+      
+      <ul className=" md:block nav-links">
+       
         <li>
           <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
             Home
@@ -33,6 +35,7 @@ function Navbar() {
           </NavLink>
         </li>
       </ul>
+
     </nav>
   );
 }

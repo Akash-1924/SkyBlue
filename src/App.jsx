@@ -1,18 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Icon from './assets/icon.png'
 import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
+
 function App() {
   return (
     <Router>
       <div className="App">
+        <img src="icon" alt="icon" />
         <Navbar />
-        <main className="pl-12 main-content">
+        
+        <main className=" main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
