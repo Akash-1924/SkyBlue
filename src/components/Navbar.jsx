@@ -5,21 +5,21 @@ function Navbar() {
   return (
     <nav className="backdrop-blur-xs  fixed">
       <div className="hidden  h-screen  md:block ">
-       <div class="w-64 grid grid-cols-1 items-center justify-between mx-auto p-4">
+       <div class="w-64 h-screen grid grid-cols-1 items-start justify-between  p-4">
           <a
             href=""
-            class="flex items-center space-x-3 rtl:space-x-reverse"
+            class="flex items-center space-x-3"
           >
             <img
               src="src\components\icon.png"
-              class="h-7"
-              alt="Flowbite Logo"
+              class="h-9"
+              alt="Sky Blue"
             />
-            <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">
+            <h2 class="self-center text-[36px] ">
               [skyblue]
-            </span>
+            </h2>
           </a>
-          <ul>
+          <ul className="items-center">
              <li>
           <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
             Home
@@ -46,6 +46,7 @@ function Navbar() {
           </NavLink>
         </li>
         </ul>
+       
         </div>
       </div>
 
