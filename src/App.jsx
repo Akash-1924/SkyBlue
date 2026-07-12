@@ -13,10 +13,10 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <img src="icon" alt="icon" />
+       
         <Navbar />
         
-        <main className=" main-content">
+        <main className="bg-[#CBCBCB] min-h-screen pt-14  md:pl-64 md:pt-0">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
